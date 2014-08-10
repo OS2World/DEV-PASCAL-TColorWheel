@@ -1,0 +1,116 @@
+/* os2 constants for rc.exe */
+#define     WC_FRAME            0xffff0001L
+#define     WC_COMBOBOX         0xffff0002L
+#define     WC_BUTTON           0xffff0003L
+#define     WC_MENU             0xffff0004L
+#define     WC_STATIC           0xffff0005L
+#define     WC_ENTRYFIELD       0xffff0006L
+#define     WC_LISTBOX          0xffff0007L
+#define     WC_SCROLLBAR        0xffff0008L
+#define     WC_TITLEBAR         0xffff0009L
+#define     WC_MLE              0xffff000AL
+#define     WC_APPSTAT          0xffff0010L
+#define     WC_KBDSTAT          0xffff0011L
+#define     WC_PECIC            0xffff0012L
+#define     WC_DBE_KKPOPUP      0xffff0013L
+#define     WC_SPINBUTTON       0xffff0020L
+#define     WC_CONTAINER        0xffff0025L
+#define     WC_SLIDER           0xffff0026L
+#define     WC_VALUESET         0xffff0027L
+#define     WC_NOTEBOOK         0xffff0028L
+#define     WC_PENFIRST         0xffff0029L
+#define     WC_PENLAST          0xffff002CL
+#define     WC_MMPMFIRST        0xffff0040L
+#define     WC_MMPMLAST         0xffff004fL
+#define   FCF_TITLEBAR               0x00000001L
+#define   FCF_SYSMENU                0x00000002L
+#define   FCF_MENU                   0x00000004L
+#define   FCF_SIZEBORDER             0x00000008L
+#define   FCF_MINBUTTON              0x00000010L
+#define   FCF_MAXBUTTON              0x00000020L
+#define   FCF_MINMAX                 0x00000030L
+#define   FCF_VERTSCROLL             0x00000040L
+#define   FCF_HORZSCROLL             0x00000080L
+#define   FCF_DLGBORDER              0x00000100L
+#define   FCF_BORDER                 0x00000200L
+#define   FCF_SHELLPOSITION          0x00000400L
+#define   FCF_TASKLIST               0x00000800L
+#define   FCF_NOBYTEALIGN            0x00001000L
+#define   FCF_NOMOVEWITHOWNER        0x00002000L
+#define   FCF_ICON                   0x00004000L
+#define   FCF_ACCELTABLE             0x00008000L
+#define   FCF_SYSMODAL               0x00010000L
+#define   FCF_SCREENALIGN            0x00020000L
+#define   FCF_MOUSEALIGN             0x00040000L
+#define   FCF_HIDEBUTTON             0x01000000L
+#define   FCF_HIDEMAX                0x01000020L
+#define   FCF_DBE_APPSTAT            0x80000000L
+#define   FCF_AUTOICON               0x40000000L
+#define   FCF_STANDARD               0x0000CC3FL
+/* #define   FCF_CLOSEBUTTON           ??? */
+#define     WS_VISIBLE             0x80000000L
+#define     WS_DISABLED            0x40000000L
+#define     WS_CLIPCHILDREN        0x20000000L
+#define     WS_CLIPSIBLINGS        0x10000000L
+#define     WS_PARENTCLIP          0x08000000L
+#define     WS_SAVEBITS            0x04000000L
+#define     WS_SYNCPAINT           0x02000000L
+#define     WS_MINIMIZED           0x01000000L
+#define     WS_MAXIMIZED           0x00800000L
+#define     WS_ANIMATE             0x00400000L
+#define     WS_GROUP               0x00010000L
+#define     WS_TABSTOP             0x00020000L
+#define     WS_MULTISELECT         0x00040000L
+#define     DT_LEFT                    0x0000
+#define     DT_QUERYEXTENT             0x0002
+#define     DT_UNDERSCORE              0x0010
+#define     DT_STRIKEOUT               0x0020
+#define     DT_TEXTATTRS               0x0040
+#define     DT_EXTERNALLEADING         0x0080
+#define     DT_CENTER                  0x0100
+#define     DT_RIGHT                   0x0200
+#define     DT_TOP                     0x0000
+#define     DT_VCENTER                 0x0400
+#define     DT_BOTTOM                  0x0800
+#define     DT_HALFTONE                0x1000
+#define     DT_MNEMONIC                0x2000
+#define     DT_WORDBREAK               0x4000
+#define     DT_ERASERECT               0x8000
+#define    SPBS_ALLCHARACTERS 0x00000000L
+#define    SPBS_NUMERICONLY   0x00000001L
+#define    SPBS_READONLY      0x00000002L
+#define    SPBS_MASTER        0x00000010L
+#define    SPBS_SERVANT       0x00000000L
+#define    SPBS_JUSTDEFAULT   0x00000000L
+#define    SPBS_JUSTLEFT      0x00000008L
+#define    SPBS_JUSTRIGHT     0x00000004L
+#define    SPBS_JUSTCENTER    0x0000000CL
+#define    SPBS_NOBORDER      0x00000020L
+#define    SPBS_FASTSPIN      0x00000100L
+#define    SPBS_PADWITHZEROS  0x00000080L
+
+/* constants used by dialog */
+#define WC_COLORWHEEL               "ColorSelectClass"
+
+/* dialog string constants */
+#define SZ_DEFTITLE                 "Edit Color"
+#define SZ_RED                      "~Red:"
+#define SZ_GREEN                    "~Green:"
+#define SZ_BLUE                     "~Blue:"
+#define SZ_OK                       "~OK"
+#define SZ_UNDO                     "~Undo"
+#define SZ_CANCEL                   "~Cancel"
+
+/* dialog control constants */
+#define DLG_CWHEEL                  100
+#define CWHEEL                      101
+#define TXT_RED                     102
+#define SPN_RED                     103
+#define TXT_GREEN                   104
+#define SPN_GREEN                   105
+#define TXT_BLUE                    106
+#define SPN_BLUE                    107
+#define BTN_OK                      108
+#define BTN_UNDO                    109
+#define BTN_CANCEL                  110
+

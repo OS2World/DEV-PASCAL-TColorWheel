@@ -1,0 +1,59 @@
+TColorWheel dialog/component v1.01
+**********************************
+
+The TColorWheel Dialog is a component based on source code released by
+Paul Ratcliffe (paulr@orac.clara.co.uk).  The component displays a dialog
+with the undocumented ColorWheel control and allows user to select a
+color with it.  The color selected is passed back via the color property
+and the undocumented wm_ColorWheelChanged message.
+
+To install:
+-----------
+Unzip the component source in your component source directory (my
+directory is "drv:\sibyl\Components\...".  Compile the source, then move
+the ColorWheel.SPU to the Sibyl COMPNT directory.
+In Sibyl, choose 'Component', then 'install'.  Go to the COMPNT directory 
+and select 'ColorWheel.SPU'.  Select the TColorWheel component and click OK.
+The TColorWheel component/dialog will appear in a tab labeled 'Custom'.  To
+change the component location, edit the EXPORTS line in the source.
+
+TColorWheel methods:
+--------------------
+Execute - Function returns TRUE if the dialog is successfully executed and
+          the color is changed from the initial starting color.  This 
+          method is the method used to run the dialog.
+
+TColorWheel properties:
+-----------------------
+Color - Read/Write.  Property is available during runtime.  This property
+        is the color selected/shown by the color wheel.
+
+DlgTitle - Read/Write.  Property is settable during design.  The property
+           defines the title shown on the dialog when executed.
+
+Version - Read only (not stored).  Property is available during design.  
+          Property returns the current version of the TColorWheel component.
+
+To use:
+-------
+Drop TColorWheel on form during design stage.  Note, the component is best 
+called from the main form.  To display dialog, call TColorWheel1.Execute.
+For example-
+
+ Procedure TForm1.Button1OnClick (Sender: TObject);
+ Begin
+   IF ColorWheel1.Execute 
+    THEN Color := ColorWheel1.Color.lColor;
+ End;
+
+To change the color wheel dialog, compiled the .RC file with RC.EXE then
+run the resulting .RES through the 'filter.exe' program.  Replace the 
+byte array in the source with the resulting output from 'filter.exe'.
+
+TColorWheel should work with Warp V3, but is untested (I don't have
+V3 installed anymore).
+
+Any comments, suggestions, bug fixes, feel free to contact me.
+
+- Michael G. Slack (slack@ibm.net), 1998/07/27
+
